@@ -5,6 +5,8 @@ fn main() {
   let y = 22;
   let sum = my_function(11, 22);
   println!("{} + {} = {}", x, y, sum);
+
+  func_condition(12);
 }
 
 fn date_type1() {
@@ -31,4 +33,14 @@ fn my_function(x: i32, y: i32) -> i32 {
   println!("[my_function]");
   let sum = x + y;
   return sum;
+}
+
+fn func_condition(number: i32) {
+  if number < 10 {
+    println!("first condition was true!");
+  } else if number < 22 {
+    println!("second condition was true!");
+  } else {
+    println!("condition was false!");
+  }
 }
