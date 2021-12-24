@@ -7,6 +7,8 @@ fn main() {
   println!("{} + {} = {}", x, y, sum);
 
   func_condition(12);
+
+  func_loop();
 }
 
 fn date_type1() {
@@ -43,4 +45,17 @@ fn func_condition(number: i32) {
   } else {
     println!("condition was false!");
   }
+}
+
+fn func_loop() {
+  let mut counter: i32 = 0;
+  let result = loop {
+    counter += 1;
+
+    if counter == 10 {
+      break counter;
+    }
+  };
+
+  println!("The result is {}", result);
 }
