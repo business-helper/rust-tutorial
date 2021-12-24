@@ -9,6 +9,8 @@ fn main() {
   func_condition(12);
 
   func_loop();
+
+  func_iter();
 }
 
 fn date_type1() {
@@ -58,4 +60,16 @@ fn func_loop() {
   };
 
   println!("The result is {}", result);
+}
+
+fn func_iter() {
+  let a = [10, 20, 30, 40, 50];
+
+  for element in a.iter() {
+    println!("the value is: {}", element);
+  }
+
+  for number in 1..4 {
+    println!("{}!", number);
+  }
 }
